@@ -7,14 +7,14 @@
 
 /* Heading Designing Part */
 
-h2 {
+.navbar h2 {
   display: flex;
   justify-content: center;
   text-align: center;
   color: white;
 }
 
-.center {
+.navbar {
   height: 4rem;
   width: 100%;
   background-color: rgb(49, 54, 85);
@@ -40,84 +40,52 @@ h2 {
 /* container Design Part */
 
 .container {
-  background-color: black;
+  background-color: rgb(49, 54, 85);
   color: white;
   border-radius: 1.2rem;
-  height: 6rem;
+  height: 3rem;
   width: 25rem;
   margin: auto ;
   margin-top: 12rem;
   box-shadow: 15px 14px 19px 0px rgba(0,0,0,0.75);
-}
-
-#btn {
   display: flex;
-  display: inline-block;
+  justify-content: center;
+}
+.container h2{
+  display: flex;
+}
+.click-btn{
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+ #btn {
   position: relative;
-  margin-left: 10rem;
-  margin-top: 1.9rem;
-  color: black;
-  background-color: rgb(255, 255, 255);
+  margin-top: 3rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: white;
+  background-color: rgb(49, 54, 85);
   padding: 0.4rem;
   border-radius: 1.8rem;
-  cursor: pointer;
+  height: 2rem;
+  width: 5rem;
   border: none;
 }
 
-#btn:hover {
-  background-color: rgb(49, 54, 85);
-  color: white;
+ #btn:hover {
+  cursor: pointer;
+  background-color: rgb(78, 90, 140);
+  color: black;
 }
-@media (max-width: 1000px) {
-  .container {
-    margin-top: 11rem;
-    margin-left: 29%;
+@media (max-width:580px) {
+  .container{
+    width: 13rem;
   }
-}
-@media (max-width: 900px) {
-  .container {
-    margin-left: 24%;
+  .container h2{
+    font-size: small;
+    
   }
-}
-
-@media (max-width: 800px) {
-  .container {
-    margin-left: 20%;
-    width: 20rem;
-  }
-  #btn {
-    margin-left: 7rem;
-  }
-}
-@media (max-width: 700px) {
-  .container {
-    margin-left: 15%;
-    width: 20rem;
-  }
-  #btn {
-    margin-left: 8rem;
-  }
-}
-@media (max-width: 600px) {
-  .container {
-    margin-left: 10%;
-  }
-  #btn {
-    margin-left: 8rem;
-  }
-}
-@media (max-width: 520px) {
-  .container {
-    margin-left: 2%;
-    width: 18rem;
-  }
-  .container h2 {
-    font-size: 1.2rem;
-  }
-  #btn {
-    margin-left: 7rem;
-    padding: 0.3rem;
-  }
+  
 }
